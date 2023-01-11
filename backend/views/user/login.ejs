@@ -1,0 +1,17 @@
+<h1>User Login</h1>
+<%
+if(typeof message !== 'undefined'){
+    %>
+    <h3><% message %></h3>
+    <%
+}
+%>
+<form action="/user/" method="post">
+    <input type="email" name="email" placeholder="Enter Email">
+    <br><br>
+    <input type="password" name="password" placeholder="Enter Password">
+    <br><br>
+    <input type="submit" value="Login">
+    <br><br>
+    <a href="/user/signup">Signup</a>
+</form>
